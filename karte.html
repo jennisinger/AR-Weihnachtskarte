@@ -5,11 +5,11 @@
   <title>AR Weihnachtskarte</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link rel="stylesheet" href="karte.css">
-
   <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
 
   <script src="https://cdn.jsdelivr.net/gh/AR-js-org/AR.js@3.4.3/aframe/build/aframe-ar.min.js"></script>
+  <script src="karte.js"></script>
+
 </head>
 
 <body>
@@ -17,8 +17,8 @@
   <a-scene embedded arjs="sourceType: webcam; debugUIEnabled: false;">
 
     <a-marker type="pattern" url="assets/marker.patt">
-      <a-box position="0 0.5 0" material="color: green;"></a-box>
-    </a-marker>
+    <a-entity id="snow-container"></a-entity></a-marker>
+
 
     <a-entity camera></a-entity>
 

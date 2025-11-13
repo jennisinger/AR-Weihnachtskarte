@@ -1,5 +1,3 @@
-// Schneeflocken-Komponente: sorgt dafür, dass sie immer zur Kamera schauen
-// Komponente: sorgt dafür, dass Schneeflocken immer zur Kamera schauen
 AFRAME.registerComponent('face-camera', {
   tick: function () {
     const camera = document.querySelector('[camera]');
@@ -11,10 +9,10 @@ AFRAME.registerComponent('face-camera', {
 
 document.addEventListener("DOMContentLoaded", () => {
   const snowContainer = document.getElementById("snow-container");
-  const flakeCount = 150;   // Anzahl der Schneeflocken
-  const radius = 4;         // Bereich um den Marker
+  const flakeCount = 150;   
+  const radius = 4;         
 
-  // Sicherheitscheck: existiert der Container?
+  
   if (!snowContainer) {
     console.warn("Kein Element mit ID 'snow-container' gefunden!");
     return;

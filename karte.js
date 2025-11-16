@@ -25,13 +25,13 @@ document.addEventListener("DOMContentLoaded", () => {
     flake.setAttribute("material", "src: assets/schneeflocke.png; transparent: true;");
     flake.setAttribute("face-camera", "");
 
-    // zufällige Startposition
+    
     const x = (Math.random() - 0.5) * radius * 2;
     const z = (Math.random() - 0.5) * radius * 2;
     const y = Math.random() * 3 + 1;
     flake.setAttribute("position", `${x} ${y} ${z}`);
 
-    // sanftes Fallen (und Wiederaufsteigen)
+    
     const duration = 3000 + Math.random() * 4000;
     flake.setAttribute(
       "animation__fall",
